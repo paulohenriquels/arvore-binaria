@@ -69,39 +69,51 @@ public class AB {
 		pilha = null;
 	}
 	
-	/**
+	
 	public void ordemItComDeque(No arv) {
 		
-		Deque<No> pilha = new ArrayDeque<>();
+		if(arv != null) {
 		
-		pilha.push(arv);
+			Deque<No> pilha = new ArrayDeque<>();
 		
-		No corrente = null;
-		
-		while(true) {
+			No corrente = arv;
 			
-			corrente = pilha.pop();
+			/**
+			 * Se o nó corrente for null e a pilha está vazia, já encerra.
+			 */
 			
-			if(corrente != null) {
+			while(pilha.isEmpty() == false || corrente != null) {
+			
+				/**
+				 * O nó corrente vai pra pilha se for diferente de null.
+				 * Após isso, movemos a ação para o filho esquerdo.
+				 */
 				
-				pilha.push(corrente);
-				pilha.push(corrente.esq);
+				if(corrente != null) {
 				
-			}else {
+					pilha.push(corrente);
+					corrente = corrente.esq;
 				
-				if(pilha.isEmpty())
-					break;
+				}else {
+					
+					/**
+					 * Se o nó corrente não existir, retiramos um elemento da pilha, 
+					 * imprimimos e movemos a ação para o filho direito deste novo nó
+					 * corrente.
+					 */
 				
-				corrente = pilha.pop();
-				System.out.print(corrente.conteudo + " ");
-				pilha.push(corrente.dir);
+					corrente = pilha.pop();
+					System.out.print(corrente.conteudo + " ");
+					corrente = corrente.dir;
+				}
+				
 			}
-				
-		}
+			
+			pilha = null;
 		
-		pilha = null;
+		}
 	}
-	*/
+	
 	
 	public void posOrdem(No arv) {
 		
