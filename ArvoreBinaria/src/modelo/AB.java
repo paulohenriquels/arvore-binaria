@@ -11,10 +11,14 @@ public class AB {
 	public No raiz;
 	
 	
+	public AB(No r) {
+		raiz = r;
+	}
+	
 	//operações
 	
-	public void preOrdem(AB arv) {
-		preOrdem(arv.raiz);
+	public void preOrdem() {
+		preOrdem(raiz);
 	}
 	
 	private void preOrdem(No arv) {
@@ -29,8 +33,8 @@ public class AB {
 		
 	}
 	
-	public void ordem(AB arv) {
-		ordem(arv.raiz);
+	public void ordem() {
+		ordem(raiz);
 	}
 
 	private void ordem(No arv) {
@@ -45,8 +49,8 @@ public class AB {
 		
 	}
 	
-	public void ordemIt(AB arv) {
-		ordemIt(arv.raiz);
+	public void ordemIt() {
+		ordemIt(raiz);
 	}
 	
 	public void ordemIt(No arv) {
@@ -82,8 +86,8 @@ public class AB {
 	}
 	
 	
-	public void ordemItComDeque(AB arv) {
-		ordemItComDeque(arv.raiz);
+	public void ordemItComDeque() {
+		ordemItComDeque(raiz);
 	}
 	
 	private void ordemItComDeque(No arv) {
@@ -131,8 +135,8 @@ public class AB {
 	}
 	
 	
-	public void posOrdem(AB arv) {
-		posOrdem(arv.raiz);
+	public void posOrdem() {
+		posOrdem(raiz);
 	}
 	
 	private void posOrdem(No arv) {
@@ -147,8 +151,8 @@ public class AB {
 		
 	}
 	
-	public void porNivel(AB arv) {
-		porNivel(arv.raiz);
+	public void porNivel() {
+		porNivel(raiz);
 	}
 	
 	private void porNivel(No arv) {
@@ -176,8 +180,8 @@ public class AB {
 		
 	}
 	
-	public void porNivelComArrayDeque(AB arv) {
-		porNivelComArrayDeque(arv.raiz);
+	public void porNivelComArrayDeque() {
+		porNivelComArrayDeque(raiz);
 	}
 	
 	private void porNivelComArrayDeque(No arv) {

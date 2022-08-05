@@ -25,37 +25,39 @@ public class TestaAB {
 		// criação do nó do nível 0
 		No no11 = new No(11, no6, no13);
 		
-		AB ab = new AB();
+		AB ab = new AB(no11);
 		
-		ab.raiz = no11;
+		/**
+		 * Testando as operações
+		 */
 		
 		System.out.println("\n\n=== Percurso em Pré-Ordem ===");
 		
-		ab.preOrdem(ab);
+		ab.preOrdem();
 		
 		System.out.println("\n\n=== Percurso em Ordem ===");
 		
-		ab.ordem(ab);
+		ab.ordem();
 		
 		System.out.println("\n\n=== Percurso em Pós-Ordem ===");
 		
-		ab.posOrdem(ab);
+		ab.posOrdem();
 		
 		System.out.println("\n\n=== Percurso por Nível ===");
 		
-		ab.porNivel(ab);
+		ab.porNivel();
 		
 		System.out.println("\n\n=== Percurso por Nível V2===");
 		
-		ab.porNivelComArrayDeque(ab);
+		ab.porNivelComArrayDeque();
 		
 		System.out.println("\n\n=== Percurso em Ordem Iterativo ===");
 		
-		ab.ordemIt(ab);
+		ab.ordemIt();
 		
 		System.out.println("\n\n=== Percurso em Ordem Iterativo V2===");
 		
-		ab.ordemItComDeque(ab);
+		ab.ordemItComDeque();
 		
 	}
 
