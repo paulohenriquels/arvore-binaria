@@ -31,31 +31,31 @@ public class TestaAB {
 		
 		System.out.println("\n\n=== Percurso em Pré-Ordem ===");
 		
-		ab.preOrdem(ab.raiz);
+		ab.preOrdem(ab);
 		
 		System.out.println("\n\n=== Percurso em Ordem ===");
 		
-		ab.ordem(ab.raiz);
+		ab.ordem(ab);
 		
 		System.out.println("\n\n=== Percurso em Pós-Ordem ===");
 		
-		ab.posOrdem(ab.raiz);
+		ab.posOrdem(ab);
 		
 		System.out.println("\n\n=== Percurso por Nível ===");
 		
-		ab.porNivel(ab.raiz);
+		ab.porNivel(ab);
 		
 		System.out.println("\n\n=== Percurso por Nível V2===");
 		
-		ab.porNivelComArrayDeque(ab.raiz);
+		ab.porNivelComArrayDeque(ab);
 		
 		System.out.println("\n\n=== Percurso em Ordem Iterativo ===");
 		
-		ab.ordemIt(ab.raiz);
+		ab.ordemIt(ab);
 		
 		System.out.println("\n\n=== Percurso em Ordem Iterativo V2===");
 		
-		ab.ordemItComDeque(ab.raiz);
+		ab.ordemItComDeque(ab);
 		
 	}
 

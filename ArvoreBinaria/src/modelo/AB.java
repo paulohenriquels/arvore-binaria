@@ -13,7 +13,11 @@ public class AB {
 	
 	//operações
 	
-	public void preOrdem(No arv) {
+	public void preOrdem(AB arv) {
+		preOrdem(arv.raiz);
+	}
+	
+	private void preOrdem(No arv) {
 		
 		if(arv != null) {
 			
@@ -24,8 +28,12 @@ public class AB {
 		}
 		
 	}
+	
+	public void ordem(AB arv) {
+		ordem(arv.raiz);
+	}
 
-	public void ordem(No arv) {
+	private void ordem(No arv) {
 		
 		if(arv != null) {
 			
@@ -35,6 +43,10 @@ public class AB {
 			
 		}
 		
+	}
+	
+	public void ordemIt(AB arv) {
+		ordemIt(arv.raiz);
 	}
 	
 	public void ordemIt(No arv) {
@@ -70,7 +82,11 @@ public class AB {
 	}
 	
 	
-	public void ordemItComDeque(No arv) {
+	public void ordemItComDeque(AB arv) {
+		ordemItComDeque(arv.raiz);
+	}
+	
+	private void ordemItComDeque(No arv) {
 		
 		if(arv != null) {
 		
@@ -115,7 +131,11 @@ public class AB {
 	}
 	
 	
-	public void posOrdem(No arv) {
+	public void posOrdem(AB arv) {
+		posOrdem(arv.raiz);
+	}
+	
+	private void posOrdem(No arv) {
 		
 		if(arv != null) {
 			
@@ -127,7 +147,11 @@ public class AB {
 		
 	}
 	
-	public void porNivel(No arv) {
+	public void porNivel(AB arv) {
+		porNivel(arv.raiz);
+	}
+	
+	private void porNivel(No arv) {
 			
 		No corrente = null;
 		
@@ -152,7 +176,11 @@ public class AB {
 		
 	}
 	
-	public void porNivelComArrayDeque(No arv) {
+	public void porNivelComArrayDeque(AB arv) {
+		porNivelComArrayDeque(arv.raiz);
+	}
+	
+	private void porNivelComArrayDeque(No arv) {
 		
 		No corrente = null;
 		
